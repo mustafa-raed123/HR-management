@@ -71,6 +71,7 @@ function uniqueId(){
   
 
     document.querySelector("form").addEventListener("submit",(event)=>{
+        localStorage.clear()
       event.preventDefault();
     let name = event.target.names.value;
     let department = event.target.Department.value;
@@ -115,3 +116,4 @@ function uniqueId(){
 }
  getemp()
  renderemp()
+// localStorage.clear()
