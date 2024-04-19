@@ -71,7 +71,7 @@ function uniqueId(){
   
 
     document.querySelector("form").addEventListener("submit",(event)=>{
-        localStorage.clear()
+     
       event.preventDefault();
     let name = event.target.names.value;
     let department = event.target.Department.value;
@@ -86,7 +86,7 @@ function uniqueId(){
 
     
     let jsonemp = JSON.stringify(employees)
-    localStorage.setItem("Employees",jsonemp);
+    localStorage.setItem("employees",jsonemp);
   
     
    
@@ -96,10 +96,10 @@ function uniqueId(){
 });
  
   function getemp(){
-    if(localStorage.getItem("Employees")== null){
+    if(localStorage.getItem("employees")== null){
       employees = employees
     }else{
-    employees = JSON.parse(localStorage.getItem("Employees"));
+    employees = JSON.parse(localStorage.getItem("employees"));
     console.log(employees)
     }
     
