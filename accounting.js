@@ -1,4 +1,4 @@
-let employees = JSON.parse(localStorage.getItem("Employees")) || [];
+let employees = JSON.parse(localStorage.getItem("employees")) || [];
 console.log(employees)
 let obj = [
     {department : "Administration" ,num : 0, tsalary : 0 ,vsalary : 0  },
